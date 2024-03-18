@@ -1,0 +1,29 @@
+@font-face {
+    font-family: main;
+    src: url(./RussoOne-Regular.ttf);
+}
+@font-face {
+    font-family: f1;
+    src: url(./ProtestRiot-Regular.ttf);
+}
+@font-face {
+    font-family: f2;
+    src: url(./Kanit-Regular.ttf);
+}
+
+* {
+    font-family: main;
+}
+
+header, #hero h1 {
+    font-family: f1;
+}
+
+
+
+main {
+    background: #141414;
+    color: rgb(255, 243, 210);
+}
+
+
