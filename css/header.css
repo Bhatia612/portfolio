@@ -1,0 +1,28 @@
+header {
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px clamp(10px, 10%, 100px);
+    position: fixed;
+    z-index: 99;
+    background: #0000001a;
+    backdrop-filter: blur(5px);
+}
+
+
+header big {
+    font-size: 2.5rem;
+    font-family: f1;
+    letter-spacing: 1px;
+}
+
+
+@media screen and (max-width: 460px) {
+
+    header big {
+        font-size: 2rem;
+    }
+
+}

@@ -1,0 +1,28 @@
+#skills {
+    height: 100%;
+    padding: 14vh clamp(10px, 10%, 70px) 0;
+}
+
+#skills big {
+    font-size: 3.5rem;
+    font-family: main;
+    display: inline-block;
+
+}
+
+#skills big span {
+    color: var(--pri);
+    font-family: f1;
+    -webkit-text-stroke: 2px var(--t2);
+}
+
+
+@media screen and (max-width: 800px) {
+    #skills big {
+        font-size: 2rem;
+
+    }
+    
+
+
+}
