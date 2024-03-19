@@ -15,8 +15,16 @@
     font-family: main;
 }
 
+
 header, #hero h1 {
     font-family: f1;
+}
+
+header {
+    position: sticky;
+    backdrop-filter: blur(5px);
+    z-index: 99;
+    background: #00000033;
 }
 
 
@@ -24,6 +32,17 @@ header, #hero h1 {
 main {
     background: #141414;
     color: rgb(255, 243, 210);
+    height: 100vh;
+    overflow: scroll;
+    overflow-x: hidden;
 }
 
+section {
+    height: 100vh;
+}
+
+.fade {
+    color: rgba(255, 255, 255, 0.728);
+
+}
 
