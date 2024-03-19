@@ -46,3 +46,6 @@ section {
 
 }
 
+#btn {
+    box-shadow: 0 4px 24px rgba(255, 255, 255, 0.784);
+}

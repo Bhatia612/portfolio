@@ -46,7 +46,13 @@ function paraRevealA() {
 }
 
 function linksA() {
-    onload.to("button", {
+    gsap.from("#btn", {
+        y: "-150%",
+        duration: 1,
+        repeat: -1,
+        yoyo: true,
+        ease: "power2.inOut"
+    }).to("#btn", {
         scrollTrigger: {
             trigger: "#intro",
             scroller: "main",
