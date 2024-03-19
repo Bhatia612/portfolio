@@ -38,7 +38,7 @@ function paraRevealA() {
             scrub: true
         },
         opacity: 0,
-        y: "100%",
+        y: "50%",
         ease: "power4.inOut",
         duration: 1,
         stagger: .2
@@ -52,7 +52,8 @@ function linksA() {
         repeat: -1,
         yoyo: true,
         ease: "power2.inOut"
-    }).to("#btn", {
+    })
+    gsap.to("#btn", {
         scrollTrigger: {
             trigger: "#intro",
             scroller: "main",
@@ -75,14 +76,3 @@ function gsapA() {
 }
 
 gsapA()
-
-
-let btn = document.querySelector("#btn")
-
-btn.onmousemove = function (e) {
-
-    let y = e.pageY - btn.offsetTop;
-    let x = e.pageX - btn.offsetLeft;
-    btn.style.setProperty("--x", x + 'px')
-    btn.style.setProperty("--y", y + 'px')
-}
