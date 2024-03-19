@@ -75,3 +75,14 @@ function gsapA() {
 }
 
 gsapA()
+
+
+let btn = document.querySelector("#btn")
+
+btn.onmousemove = function (e) {
+
+    let y = e.pageY - btn.offsetTop;
+    let x = e.pageX - btn.offsetLeft;
+    btn.style.setProperty("--x", x + 'px')
+    btn.style.setProperty("--y", y + 'px')
+}
