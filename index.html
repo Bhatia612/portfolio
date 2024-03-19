@@ -11,34 +11,34 @@
 
 <body>
     <main>
-        <header class="top-0 w-full h-[8vh] text-3xl flex items-center px-12 z-50">
+        <header class="text-f1 text-white top-0 w-full h-[8vh] text-3xl flex items-center px-12 z-50">
             The Web Guy
         </header>
 
-        
-            <a href = "#skills" id ="btn"
-                class="absolute rounded-full text-xl whitespace-nowrap bottom-0 left-1/2 -translate-x-1/2 -translate-y-[200%] border-2 border-white py-4 px-12">
+        <section id="hero" class="w-full flex-col flex">
+            <a href="#skills" id="btn"
+                class="absolute text-white rounded-full text-xl whitespace-nowrap bottom-0 left-1/2 -translate-x-1/2 -translate-y-[200%] border-2 border-white py-4 px-12">
                 Know More ↓
             </a>
-
-
-        <section id="hero" class="w-full flex-col px-12 mt-16">
-            <div id=intro class="w-full flex-col py-16">
+            <div id=intro class="w-full flex-col pt-20 px-12">
                 <h2 class="text-xl">Hello I'm</h2>
-                <h1 class="text-center text-6xl py-3 whitespace-nowrap">Mohit Bhatia</h1>
+                <h1 class="text-f1 stroke-1-w text-center text-6xl py-3 whitespace-nowrap">Mohit Bhatia</h1>
                 <h2 class="text-end text-base">The Web Expert, <br>Based in Brampton.</small>
             </div>
 
-            <div id=about class="w-full h-[40vh] text-lg">
-                <p class="fade text-center">Welcome to my corner of the web! I'm MOHIT BHATIA, a dedicated web developer
+            <div id=about class="w-full text-lg pt-16 px-9">
+                <p class="fade text-center pt-2">Welcome to my corner of the web! I'm MOHIT BHATIA, a dedicated web
+                    developer
                     with a love for clean,
                     functional design.</p>
 
-                <p class="fade text-center">With a keen eye for detail and a passion for problem-solving, I specialize
+                <p class="fade text-center pt-2">With a keen eye for detail and a passion for problem-solving, I
+                    specialize
                     in crafting beautiful,
                     user-friendly websites that not only meet but exceed expectations.</p>
 
-                <p class="fade text-center">Whether you're looking to establish a strong online presence, enhance user
+                <p class="fade text-center pt-2">Whether you're looking to establish a strong online presence, enhance
+                    user
                     engagement, or streamline
                     your digital processes, I'm here to transform your vision into a reality. Let's collaborate and
                     create something truly exceptional together!</p>
@@ -46,8 +46,25 @@
 
         </section>
 
-        <section id="skills"></section>
-        <section></section>
+        <section id="skills" class="py-16">
+            <h1 class=" text-3xl pl-6 text-white">Things I'm <span class="text-f1 stroke-1-w">good</span> at</h1>
+            <div name = "Languages" class="langs grid grid-cols-1 place-items-center w-full py-16">
+                <small class="skill text-f1 text-2xl text-center w-4/6">CSS 3</small>
+                <small class="skill text-f1 text-2xl text-center w-4/6">HTML 5</small>
+                <small class="skill text-f1 text-2xl text-center w-4/6">Python</small>
+                <small class="skill text-f1 text-2xl text-center w-4/6">JavaScript</small>
+            </div>
+            <div name = "Framworks" class="frmwrk grid grid-cols-1 place-items-center w-full py-16">
+                <small class="skill text-f1 text-2xl text-center w-4/6">React</small>
+                <small class="skill text-f1 text-2xl text-center w-4/6">Django</small>
+                <small class="skill text-f1 text-2xl text-center w-4/6">Tailwind</small>
+                <small class="skill text-f1 text-2xl text-center w-4/6">Bootstrap</small>
+            </div>
+            <div name = "Tools" class="hidden tools grid grid-cols-1 place-items-center w-full py-16">
+                <small class="skill text-f1 text-2xl text-center w-4/6">figma</small>
+                <small class="skill text-f1 text-2xl text-center w-4/6">Photoshop</small>
+            </div>
+        </section>
     </main>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"

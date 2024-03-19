@@ -1,9 +1,9 @@
-let onload = gsap.timeline(defaults = {
+let animate = gsap.timeline(defaults = {
     delay: .5
 })
 
 function onLoadA() {
-    onload.from("main", {
+    animate.from("main", {
         x: "100%",
         ease: "power4.inOut",
         duration: 1
@@ -29,36 +29,34 @@ function onLoadA() {
 }
 
 function paraRevealA() {
-    onload.from(".fade", {
+    animate.from(".fade", {
         scrollTrigger: {
             trigger: "#intro",
             scroller: "main",
-            start: "top 10%",
+            start: "top 5%%",
             end: "bottom 5%",
             scrub: true
         },
         opacity: 0,
-        y: "50%",
+        y: "100%",
         ease: "power4.inOut",
-        duration: 1,
         stagger: .2
     })
 }
 
 function linksA() {
-    gsap.from("#btn", {
+    animate.from("#btn", {
         y: "-150%",
         duration: 1,
         repeat: -1,
         yoyo: true,
         ease: "power2.inOut"
-    })
-    gsap.to("#btn", {
+    }).to("#btn", {
         scrollTrigger: {
             trigger: "#intro",
             scroller: "main",
-            start: "top 10%",
-            end: "bottom 30%",
+            start: "top 5%",
+            end: "bottom 20%",
             scrub: true
         },
         opacity: 0,
@@ -68,11 +66,25 @@ function linksA() {
     })
 }
 
+function skillsA() {
+    animate.from("#skills h1", {
+        ScrollTrigger: {
+            trigger: "#intro",
+            scroller: "main",
+            start: "bottom 50%",
+            end: "bottom 20%",
+        },
+        opacity: 0,
+        y: "100%"
+    })
+
+}
 
 function gsapA() {
     onLoadA()
     paraRevealA()
     linksA()
+    skillsA()
 }
 
 gsapA()

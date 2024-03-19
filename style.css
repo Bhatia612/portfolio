@@ -2,10 +2,12 @@
     font-family: main;
     src: url(./RussoOne-Regular.ttf);
 }
+
 @font-face {
     font-family: f1;
     src: url(./ProtestRiot-Regular.ttf);
 }
+
 @font-face {
     font-family: f2;
     src: url(./Kanit-Regular.ttf);
@@ -13,11 +15,18 @@
 
 * {
     font-family: main;
+    scroll-behavior: smooth;
+    /* scrollbar-width: none; 
+    -ms-overflow-style: none; */
 }
 
 
-header, #hero h1 {
+.text-f1 {
     font-family: f1;
+}
+
+.text-f2 {
+    font-family: f2;
 }
 
 header {
@@ -31,21 +40,81 @@ header {
 
 main {
     background: #141414;
-    color: rgb(255, 243, 210);
+    color: rgb(211, 213, 255);
     height: 100vh;
     overflow: scroll;
     overflow-x: hidden;
 }
 
-section {
-    height: 100vh;
-}
-
-.fade {
-    color: rgba(255, 255, 255, 0.728);
-
-}
 
 #btn {
     box-shadow: 0 4px 24px rgba(255, 255, 255, 0.784);
+}
+
+.stroke-1-w {
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+}
+
+.skill {
+    padding: .4rem 0;
+    letter-spacing: 4px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+
+}
+
+
+.langs .skill {
+    display: block;
+    border-left: .2rem solid rgba(255, 255, 255, 0.064);
+}
+
+.langs .skill:hover {
+    display: block;
+    border-left: 3rem solid white;
+}
+
+
+.frmwrk .skill {
+    border-right: .2rem solid rgba(255, 255, 255, 0.064);
+
+}
+
+.frmwrk .skill:hover {
+    border-right: 3rem solid white;
+
+}
+
+
+.tools .skill {
+    border-left: .2rem solid rgba(255, 255, 255, 0.064);
+
+}
+
+.tools .skill:hover {
+    border-right: 3rem solid white;
+}
+
+
+#skills div {
+    position: relative;
+}
+
+#skills div::before {
+    content: attr(name);
+    position: absolute;
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+
+}
+
+#skills div:nth-of-type(even):before {
+    transform: rotateZ(90deg) translateY(-100%);
+    right: 0;
+}
+
+#skills div:nth-of-type(odd):before {
+    transform: rotateZ(-90deg) translateY(-100%);
+    left: 0;
 }
